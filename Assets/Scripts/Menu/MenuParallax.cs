@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class ParallaxBackground : MonoBehaviour
+public class MenuParallax : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     float backgroundImageWidth;
@@ -17,7 +16,7 @@ public class ParallaxBackground : MonoBehaviour
     // Delta time depends on the machine performance
     void Update()
     {
-        float moveX = (moveSpeed * PlayerController.Instance.boost) * Time.deltaTime;
+        float moveX = moveSpeed * Time.deltaTime;
         transform.position += new Vector3(moveX, 0);
 
         // If the background has moved completely off the screen, reset its position to create a looping effect

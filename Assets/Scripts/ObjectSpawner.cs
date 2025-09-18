@@ -1,15 +1,13 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class objectSwpaner : MonoBehaviour
-{
-
-
+{ 
     [SerializeField] private Transform minPos;
     [SerializeField] private Transform maxPos;
     [SerializeField] private int waveNumber;
     [SerializeField] private List<Wave> waves;
-    [SerializeField] private float delayBetweenWaves; // Not used yet
 
     [System.Serializable]
     public class Wave

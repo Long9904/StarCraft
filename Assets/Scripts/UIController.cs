@@ -12,6 +12,8 @@ public class UIController : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private TMP_Text healthText;
 
+    public GameObject pausePanel;
+
     void Awake()
     {
         if (Instance != null)

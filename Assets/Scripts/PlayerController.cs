@@ -55,24 +55,29 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Go to Edit -> Project Settings -> Input Manager to see the input axes
-        float directionX = Input.GetAxisRaw("Horizontal");
-        float directionY = Input.GetAxisRaw("Vertical");
-
-        // Check in the animator for the parameters "moveX" and "moveY"
-        animator.SetFloat("moveX", directionX);
-        animator.SetFloat("moveY", directionY);
-
-        // Create a new Vector2 based on the input axes
-        playerDirection = new Vector2(directionX, directionY).normalized;
-
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Fire2"))
+        if (Time.timeScale > 0)
         {
-            EnterBoost();
-        }
-        else if (Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Fire2"))
-        {
-            ExitBoost();
+            // Go to Edit -> Project Settings -> Input Manager to see the input axes
+            float directionX = Input.GetAxisRaw("Horizontal");
+            float directionY = Input.GetAxisRaw("Vertical");
+
+            // Check in the animator for the parameters "moveX" and "moveY"
+
+            animator.SetFloat("moveX", directionX);
+            animator.SetFloat("moveY", directionY);
+
+
+            // Create a new Vector2 based on the input axes
+            playerDirection = new Vector2(directionX, directionY).normalized;
+
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Fire2"))
+            {
+                EnterBoost();
+            }
+            else if (Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Fire2"))
+            {
+                ExitBoost();
+            }
         }
     }
 
@@ -118,7 +123,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            TakeDamage(1); 
+            TakeDamage(1);
         }
     }
 
