@@ -1,0 +1,20 @@
+{
+    "asset": "577dafbf1642d794e9d6c0098a8bde20",
+    "fileName": "01994c02-9d79-7bcb-a583-bd6745a468ab.jpg",
+    "prompt": "Generate a 2D parallax background with 4 layers for a space-themed game.\n\nLayer 1 (farthest): deep space gradient sky (dark blue → purple → black) with faint nebulas and soft glowing dust, subtle stars.\n\nLayer 2: clusters of bright stars, some twinkling, distant galaxies as light smudges, small planet silhouettes.\n\nLayer 3: medium-size planets, glowing rings, asteroid belts with scattered rocks, glowing cosmic clouds.\n\nLayer 4 (closest/foreground): large detailed asteroids, broken space stations or satellites, glowing energy crystals, giving depth and framing the scene.\nStyle: 2D, cartoon yet slightly realistic, vibrant colors, smooth edges. Should look suitable for a side-scrolling space adventure game, with clear separation between layers for parallax scrolling. Keep atmosphere mysterious but adventurous.",
+    "negativePrompt": "",
+    "model": "94c4260f-b988-40e7-b3d3-435b9f449bd0",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "6083395106230d6bfa00cae19ce13c4b",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

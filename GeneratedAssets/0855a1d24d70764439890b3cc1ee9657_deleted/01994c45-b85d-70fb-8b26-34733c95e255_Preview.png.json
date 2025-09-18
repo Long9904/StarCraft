@@ -1,0 +1,11 @@
+{
+    "asset": "0855a1d24d70764439890b3cc1ee9657",
+    "fileName": "01994c45-b85d-70fb-8b26-34733c95e255_Preview.png",
+    "prompt": "change to other gradient, styke univers ",
+    "negativePrompt": "",
+    "model": "575ecf67-4425-4939-97b9-5e138b8ee234",
+    "modelName": "Unity Texture2D",
+    "customSeed": 1640076578,
+    "w3CTraceId": "d59e83d3cafc4ccd8b30f8eb958f6ab1",
+    "refinementMode": "Generation"
+}
